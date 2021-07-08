@@ -46,7 +46,7 @@ version:"3.9"                                                           services
          image: minecraft:v1.0
          ports:
              - 19132:19132/udp
-             - 19132:19132
+             - 19132:23333
              #这里指定需要映射的端口
          volumes:
              ./minecraft:/minecraft/dashboard/server
