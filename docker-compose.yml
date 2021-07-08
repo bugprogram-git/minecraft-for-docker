@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+    minecraft:
+        container_name: minecraft
+        hostname: minecraft
+        build: .
+        image: minecraft:v1.0
+        ports:
+            - 19132:19132/udp
+            - 19132:23333
+        volumes:
+            - ./minecraft:/minecraft/dashboard/server
+        restart: unless-stopped
+
