@@ -38,7 +38,8 @@ ENTRYPOINT cd /minecraft/dashboard/ && npm start
 ```
 ## 3.编写docker-compose.yml文件进行启动容器
 ```yaml
-version:"3.9"                                                           services:
+version:"3.9"                                                           
+services:
      minecraft:
          container_name: minecraft
          hostname: minecraft
