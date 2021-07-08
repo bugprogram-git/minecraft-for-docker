@@ -5,13 +5,10 @@ apt install docker docker-compose
 ```
 ## 2.编写Dockerfile构建docker image
 ```Dockerfile
- FROM
- ubuntu:latest                                                                                               TZ=Asia/Shanghai
+FROM ubuntu:latest                                               
+ENV TZ=Asia/Shanghai
 WORKDIR /
- FROM ubuntu:latest                                               
- ENV TZ=Asia/Shanghai
- WORKDIR /
- RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list \ 
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list \ 
 && apt-get update \
 && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime 
 && echo $TZ > /etc/timezone \
