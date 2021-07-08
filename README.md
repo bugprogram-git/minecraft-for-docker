@@ -86,7 +86,7 @@ LD_LIBRIARY_PATH=. ./bedrock_server
 ```  
 编写完成之后上传到服务器根目录,上传完成之后,可以启动服务端了  
 ## 6.关于服务端配置参数  
-[查看minecraft详细配置教程](help.html)
+[查看minecraft详细配置教程](https://bugprogram-git.github.io/MinecraftForDocker.html)
 ### 6.1关于玩家如何上传自己的资源包  
 ```bash
 #1.找到文件管理根目录
