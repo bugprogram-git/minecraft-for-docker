@@ -18,7 +18,6 @@ apt-get install -y tzdata unzip wget npm curl \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN mkdir /minecraft \
 && mkdir /minecraft/dashboard \
-&& mkdir /minecraft/server \
 && wget https://github.com/Suwings/MCSManager/archive/refs/tags/v8.6.23.zip \
 #这里的链接复制minecraft管理面板下载链接
 && unzip v8.6.23.zip -d /minecraft/dashboard 
