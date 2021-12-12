@@ -34,7 +34,7 @@ ENTRYPOINT cd /minecraft/dashboard/ && npm start
 ```
 ## 3.编写docker-compose.yml文件进行启动容器
 ```yaml
-version:"3.9"                                                           
+version: "3.9"                                                           
 services:
      minecraft:
          container_name: minecraft
@@ -46,7 +46,7 @@ services:
              - 19132:23333
              #这里指定需要映射的端口
          volumes:
-             ./minecraft:/minecraft/dashboard/server
+             - ./minecraft:/minecraft/dashboard/server
              #这里指定映射路径
          restart: unless-stopped
 ```
